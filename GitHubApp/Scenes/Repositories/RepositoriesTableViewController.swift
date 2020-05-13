@@ -8,7 +8,7 @@
 import UIKit
 import MBProgressHUD
 
-class RepositoriesTableViewController: UITableViewController, RepositoriesView, UISearchBarDelegate {
+class RepositoriesTableViewController: UITableViewController, UISearchBarDelegate {
     
     var configurator = RepositoriesConfiguratorImplementation()
     var presenter: RepositoriesPresenter!
@@ -56,7 +56,31 @@ class RepositoriesTableViewController: UITableViewController, RepositoriesView, 
         presenter.didSelect(row: indexPath.row)
     }
     
-    // MARK: - RepositoriesView
+    // MARK: - UISearchBarDelegate
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        presenter.getRepositories(query: searchBar.text ?? "", sort: "stars", sortOrder: "desc")
+        searchController.searchBar.selectedScopeButtonIndex = 0
+    }
+    
+    func searchBar(_ searchBar: UISearchBar,
+                   selectedScopeButtonIndexDidChange selectedScope: Int) {
+        presenter.sortRepositories(sort: presenter.repositorySortKeys[selectedScope])
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        presenter.getRepositories(query: nil, sort: nil, sortOrder: nil)
+        searchController.searchBar.selectedScopeButtonIndex = 0
+    }
+    
+}
+
+// MARK: - RepositoriesView
+extension RepositoriesTableViewController: RepositoriesView {
+    
+    func display(screenTitle: String) {
+        self.title = screenTitle
+    }
     
     func refreshRepositoriesView() {
         tableView.reloadData()
@@ -79,22 +103,4 @@ class RepositoriesTableViewController: UITableViewController, RepositoriesView, 
     func display(searchBarPlaceholder: String) {
         searchController.searchBar.placeholder = searchBarPlaceholder
     }
-    
-    // MARK: - UISearchBarDelegate
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        presenter.getRepositories(query: searchBar.text ?? "", sort: "stars", sortOrder: "desc")
-        searchController.searchBar.selectedScopeButtonIndex = 0
-    }
-    
-    func searchBar(_ searchBar: UISearchBar,
-                   selectedScopeButtonIndexDidChange selectedScope: Int) {
-        presenter.sortRepositories(sort: presenter.repositorySortKeys[selectedScope])
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        presenter.getRepositories(query: nil, sort: nil, sortOrder: nil)
-        searchController.searchBar.selectedScopeButtonIndex = 0
-    }
-    
 }

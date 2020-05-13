@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  GitHubApp
+
+  Created by Nikola on 13/05/2020.
+  
+*/
+
+"search_repositories_placeholder" = "Pretraga Repozitorija";
+"repository_details_title" = "Detalji Repozitorija";
+"owner_details_title" = "Details o korisniku";
+"repositories_title" = "Repozitoriji";
+"programming_language_label" = "Programski jezik";
+"created_at_label" = "Datum kreiranja";
+"updated_at_label" = "Datum izmjene";
+"issues_label" = "Issues";
+"forks_label" = "Forks";

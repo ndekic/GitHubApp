@@ -20,8 +20,8 @@ class RepositoryTableViewCell: UITableViewCell {
     func display(repository: Repository) {
         nameLabel.text = repository.name
         ownerNameButton.setTitle(repository.owner.login, for: .normal)
-        forkCountLabel.text = String("Forks: \(repository.forks_count)")
-        issueNumberLabel.text = String("Issues: \(repository.open_issues_count)")
+        forkCountLabel.text = String("\("forks_label".localized()): \(repository.forks_count)")
+        issueNumberLabel.text = String("\("issues_label".localized()): \(repository.open_issues_count)")
         ownerImageView.sd_setImage(with: URL(string: repository.owner.avatar_url), placeholderImage: UIImage.defaultImage())
     }
 

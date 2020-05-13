@@ -42,15 +42,15 @@ class RepositoryDetailsPresenterImplementation: RepositoryDetailsPresenter {
     }
 
     func viewDidLoad() {
-        view?.display(screenTitle: "Repository Details")
+        view?.display(screenTitle: "repository_details_title".localized())
         view?.display(repositoryName: repository.name)
         view?.display(ownerName: repository.owner.login)
-        view?.display(forkCount: String("Forks: \(repository.forks_count)"))
-        view?.display(issueCount: String("Issues: \(repository.open_issues_count)"))
-        view?.display(createdAt: "Created at: \(repository.created_at.toString())")
-        view?.display(updatedAt: "Updated at: \(repository.updated_at.toString())")
+        view?.display(forkCount: String("\("forks_label".localized()): \(repository.forks_count)"))
+        view?.display(issueCount: String("\("issues_label".localized()): \(repository.open_issues_count)"))
+        view?.display(createdAt: "\("created_at_label".localized()): \(repository.created_at.toString())")
+        view?.display(updatedAt: "\("updated_at_label".localized()): \(repository.updated_at.toString())")
         view?.display(URL: repository.url)
-        view?.display(programmingLanguage: "Programming language: \(repository.language ?? "N/A")" )
+        view?.display(programmingLanguage: "\("programming_language_label".localized()): \(repository.language ?? "N/A")" )
     }
     
     func presentRepoUrl(repositoryDetailViewController: RepositoryDetailsViewController) {

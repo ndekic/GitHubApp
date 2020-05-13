@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  GitHubApp
+
+  Created by Nikola on 13/05/2020.
+  
+*/
+
+"search_repositories_placeholder" = "Search Repositories";
+"repository_details_title" = "Repository Details";
+"owner_details_title" = "Owner Details";
+"repositories_title" = "Repositories";
+"programming_language_label" = "Programming language";
+"created_at_label" = "Created at";
+"updated_at_label" = "Updated at";
+"issues_label" = "Issues";
+"forks_label" = "Forks";

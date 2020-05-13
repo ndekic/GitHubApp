@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol RepositoriesView: class {
+    func display(screenTitle: String)
     func refreshRepositoriesView()
     func displayRepositoriesRetrievalError(title: String, message: String)
     func showLoader()
@@ -53,7 +54,8 @@ class RepositoriesPresenterImplementation: RepositoriesPresenter {
     
     func viewDidLoad() {
         getRepositories(query: nil, sort: nil, sortOrder: nil)
-        view?.display(searchBarPlaceholder: "Search Repositories")
+        view?.display(searchBarPlaceholder: "search_repositories_placeholder".localized())
+        view?.display(screenTitle: "repositories_title".localized())
     }
     
     func configure(cell: RepositoryTableViewCell, forRow row: Int) {

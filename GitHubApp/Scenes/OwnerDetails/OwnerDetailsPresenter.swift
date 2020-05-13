@@ -36,7 +36,7 @@ class OwnerDetailsPresenterImplementation: OwnerDetailsPresenter {
     }
     
     func viewDidLoad() {
-        view?.display(screenTitle: "Owner Details")
+        view?.display(screenTitle: "owner_details_title".localized())
         view?.display(ownerName: owner.login)
         view?.display(URL: owner.url)
         view?.display(avatarURL: owner.avatar_url)

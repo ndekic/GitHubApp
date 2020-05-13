@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "No. Forks:"; ObjectID = "3qW-wG-der"; */
+"3qW-wG-der.text" = "No. Forks:";
+
+/* Class = "UIButton"; normalTitle = "GitHub URL"; ObjectID = "9WL-P1-ttU"; */
+"9WL-P1-ttU.normalTitle" = "GitHub URL";
+
+/* Class = "UINavigationItem"; title = "Repositories"; ObjectID = "FYY-RJ-Ykr"; */
+"FYY-RJ-Ykr.title" = "Repositories";
+
+/* Class = "UILabel"; text = "Repo name"; ObjectID = "NJs-4O-eyQ"; */
+"NJs-4O-eyQ.text" = "Repo name";
+
+/* Class = "UILabel"; text = "Reposiotry Name"; ObjectID = "OiR-fz-L2X"; */
+"OiR-fz-L2X.text" = "Reposiotry Name";
+
+/* Class = "UIButton"; normalTitle = "Owner"; ObjectID = "UIc-Ep-8FE"; */
+"UIc-Ep-8FE.normalTitle" = "Owner";
+
+/* Class = "UILabel"; text = "No. Issues:"; ObjectID = "abF-ch-YJx"; */
+"abF-ch-YJx.text" = "No. Issues:";
+
+/* Class = "UILabel"; text = "Programming language:"; ObjectID = "hJp-8h-rBv"; */
+"hJp-8h-rBv.text" = "Programming language:";
+
+/* Class = "UILabel"; text = "Created at"; ObjectID = "jZB-JF-Edq"; */
+"jZB-JF-Edq.text" = "Created at";
+
+/* Class = "UILabel"; text = "No. Issues:"; ObjectID = "oBI-qX-niV"; */
+"oBI-qX-niV.text" = "No. Issues:";
+
+/* Class = "UILabel"; text = "Owner Name"; ObjectID = "qlQ-9D-l9M"; */
+"qlQ-9D-l9M.text" = "Owner Name";
+
+/* Class = "UILabel"; text = "No. Forks:"; ObjectID = "rFd-b9-sh0"; */
+"rFd-b9-sh0.text" = "No. Forks:";
+
+/* Class = "UIButton"; normalTitle = "GitHub URL"; ObjectID = "spd-ly-GQ7"; */
+"spd-ly-GQ7.normalTitle" = "GitHub URL";
+
+/* Class = "UIButton"; normalTitle = "Owner"; ObjectID = "tDC-tH-zi0"; */
+"tDC-tH-zi0.normalTitle" = "Owner";
+
+/* Class = "UILabel"; text = "Updated at:"; ObjectID = "tfH-GQ-GDn"; */
+"tfH-GQ-GDn.text" = "Updated at:";

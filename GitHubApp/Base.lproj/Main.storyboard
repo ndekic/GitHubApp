@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Repositories-->
+        <!--Repositories Table View Controller-->
         <scene sceneID="bbN-aa-WAn">
             <objects>
                 <tableViewController id="HA3-Pt-2gB" customClass="RepositoriesTableViewController" customModule="GitHubApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,7 +102,7 @@
                             <outlet property="delegate" destination="HA3-Pt-2gB" id="Bqu-Y9-GJf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Repositories" id="FYY-RJ-Ykr"/>
+                    <navigationItem key="navigationItem" id="FYY-RJ-Ykr"/>
                     <connections>
                         <segue destination="TQh-sx-lub" kind="show" identifier="RepositoriesSceeneToRepositoryDetailsSceneSegue" id="zkj-PJ-y9o"/>
                         <segue destination="0Qw-Xa-uft" kind="show" identifier="RepositoriesSceeneToOwnerDetailsSceneSegue" id="f4r-cN-4il"/>
