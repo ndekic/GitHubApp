@@ -63,8 +63,6 @@
 		20BCD94579C464BF6B475ADF /* Pods-GitHubAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubAppTests.release.xcconfig"; path = "Target Support Files/Pods-GitHubAppTests/Pods-GitHubAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		533B26072CEEFC0F14E2696A /* Pods-GitHubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApp.release.xcconfig"; path = "Target Support Files/Pods-GitHubApp/Pods-GitHubApp.release.xcconfig"; sourceTree = "<group>"; };
 		9300009D246C0D4600C44AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9300009F246C0D5B00C44AE2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Main.strings; sourceTree = "<group>"; };
-		930000A0246C0D5B00C44AE2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		930000A1246C0D5B00C44AE2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		930000A4246C0E8500C44AE2 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
 		93646CA02462AD7F000752C0 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -576,7 +574,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				93646CAA2462AD7F000752C0 /* Base */,
-				9300009F246C0D5B00C44AE2 /* hr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -585,7 +582,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				93646CAF2462AD84000752C0 /* Base */,
-				930000A0246C0D5B00C44AE2 /* hr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
