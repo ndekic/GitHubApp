@@ -68,3 +68,6 @@ xcuserdata
 *.moved-aside
 DerivedData
 *.xcuserstate
+Podfile.lock
+*.xcworkspace/
+Pods/
