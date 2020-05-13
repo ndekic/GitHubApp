@@ -15,3 +15,6 @@
 "updated_at_label" = "Datum izmjene";
 "issues_label" = "Issues";
 "forks_label" = "Forks";
+"open_with_label" = "Otvori pomoću";
+"cancel_label" = "Poništi";
+"ok_label" = "OK";

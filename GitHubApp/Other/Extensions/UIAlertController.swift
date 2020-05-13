@@ -9,7 +9,7 @@ import UIKit
 
 extension UIAlertController {
     func presentWebViewPicker(controller:UIViewController, url: String, completionHandler: @escaping (Bool) -> Void) {
-        let actionSheetController: UIAlertController = UIAlertController(title: "Open with", message: message, preferredStyle: .actionSheet)
+        let actionSheetController: UIAlertController = UIAlertController(title: "open_with_label".localized(), message: message, preferredStyle: .actionSheet)
         
         actionSheetController.addAction(UIAlertAction(title: "Chrome" , style: .default , handler:{ _ in
             if let url = URL(string: "googlechromes://\(url)") {
@@ -33,7 +33,7 @@ extension UIAlertController {
             }
         }))
         
-        actionSheetController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheetController.addAction(UIAlertAction(title: "cancel_label".localized(), style: .cancel, handler: nil))
 
         controller.present(actionSheetController, animated: true, completion: nil)
     }

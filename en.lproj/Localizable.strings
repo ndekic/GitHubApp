@@ -15,3 +15,6 @@
 "updated_at_label" = "Updated at";
 "issues_label" = "Issues";
 "forks_label" = "Forks";
+"open_with_label" = "Open with";
+"cancel_label" = "Cancel";
+"ok_label" = "OK";
