@@ -8,7 +8,7 @@
 import UIKit
 import MBProgressHUD
 
-class RepositoriesTableViewController: UITableViewController, UISearchBarDelegate {
+class RepositoriesTableViewController: UITableViewController {
     
     var configurator = RepositoriesConfiguratorImplementation()
     var presenter: RepositoriesPresenter!
@@ -49,15 +49,16 @@ class RepositoriesTableViewController: UITableViewController, UISearchBarDelegat
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return Constants.defaultCellHeight
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.didSelect(row: indexPath.row)
     }
-    
-    // MARK: - UISearchBarDelegate
-    
+}
+
+// MARK: - UISearchBarDelegate
+extension RepositoriesTableViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         presenter.getRepositories(query: searchBar.text ?? "", sort: "stars", sortOrder: "desc")
         searchController.searchBar.selectedScopeButtonIndex = 0
@@ -72,7 +73,6 @@ class RepositoriesTableViewController: UITableViewController, UISearchBarDelegat
         presenter.getRepositories(query: nil, sort: nil, sortOrder: nil)
         searchController.searchBar.selectedScopeButtonIndex = 0
     }
-    
 }
 
 // MARK: - RepositoriesView
@@ -87,7 +87,7 @@ extension RepositoriesTableViewController: RepositoriesView {
     }
     
     func displayRepositoriesRetrievalError(title: String, message: String) {
-        print("Error: \(message)")
+        presentAlert(withTitle: title, message: nil)
     }
     
     func showLoader() {

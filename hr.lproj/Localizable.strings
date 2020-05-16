@@ -18,3 +18,4 @@
 "open_with_label" = "Otvori pomoću";
 "cancel_label" = "Poništi";
 "ok_label" = "OK";
+"general_error_message" = "Dogodila se greška";

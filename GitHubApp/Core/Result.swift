@@ -12,7 +12,7 @@ struct CoreError: Error {
         return message
     }
     
-    var message = "Error occured"
+    var message = "general_error_message".localized()
 }
 
 typealias Result<T> = Swift.Result<T, Error>

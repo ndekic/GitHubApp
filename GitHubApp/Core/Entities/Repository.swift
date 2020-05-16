@@ -21,9 +21,3 @@ struct Repository: Codable {
     var language: String?
     var owner: Owner
 }
-
-extension Repository: Equatable { }
-
-func == (lhs: Repository, rhs: Repository) -> Bool {
-    return lhs.id == rhs.id
-}

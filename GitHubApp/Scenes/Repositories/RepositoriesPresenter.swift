@@ -118,7 +118,7 @@ class RepositoriesPresenterImplementation: RepositoriesPresenter {
     
     fileprivate func handleRepositoriesError(_ error: Error) {
         // Here we could check the error code and display a localized error message
-        view?.displayRepositoriesRetrievalError(title: "Error", message: error.localizedDescription)
+        view?.displayRepositoriesRetrievalError(title: "general_error_message".localized(), message: error.localizedDescription)
         view?.hideLoader()
     }
     

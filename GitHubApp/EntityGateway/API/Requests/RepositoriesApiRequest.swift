@@ -13,13 +13,15 @@ struct RepositoriesApiRequest: ApiRequest {
     let sortOrder: String
     
     var urlRequest: URLRequest {
-        let url: URL! = URL(string: "https://api.github.com/search/repositories?q=\(query)&sort=\(sort)&order=\(sortOrder)")
-        var request = URLRequest(url: url)
+        let originalUrl = "\(Constants.baseURL)?q=\(query)&sort=\(sort)&order=\(sortOrder)"
+        if let encoded = originalUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed), let url = URL(string: encoded) {
+            var request = URLRequest(url: url)
+            request.setValue("application/vnd.github.mercy-preview+json", forHTTPHeaderField: "Accept")
+            request.httpMethod = "GET"
+            
+            return request
+        }
         
-        request.setValue("application/vnd.github.mercy-preview+json", forHTTPHeaderField: "Accept")
-        
-        request.httpMethod = "GET"
-        
-        return request
+        return URLRequest(url: URL(string: Constants.baseURL)!)
     }
 }

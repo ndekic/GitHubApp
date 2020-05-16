@@ -11,6 +11,7 @@
 		27A687444DFD1308279DBDD8 /* Pods_GitHubAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3811CB1CA3134F7C64C4236 /* Pods_GitHubAppTests.framework */; };
 		9300009C246C0D4600C44AE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9300009E246C0D4600C44AE2 /* Localizable.strings */; };
 		930000A5246C0E8500C44AE2 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000A4246C0E8500C44AE2 /* String+Localize.swift */; };
+		932AA2DA24700DC50069B150 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2D924700DC50069B150 /* Constants.swift */; };
 		93646CA42462AD7F000752C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93646CA32462AD7F000752C0 /* AppDelegate.swift */; };
 		93646CAB2462AD7F000752C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93646CA92462AD7F000752C0 /* Main.storyboard */; };
 		93646CAD2462AD84000752C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93646CAC2462AD84000752C0 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		9300009D246C0D4600C44AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		930000A1246C0D5B00C44AE2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		930000A4246C0E8500C44AE2 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		932AA2D924700DC50069B150 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		93646CA02462AD7F000752C0 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93646CA32462AD7F000752C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93646CAA2462AD7F000752C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 			children = (
 				93867EFC246B06ED00D75AF2 /* Extensions */,
 				9396C23E2462D69D000298C7 /* ViewRouter.swift */,
+				932AA2D924700DC50069B150 /* Constants.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				93BCE6BD246AC47D00E2DD76 /* RepositoryDetailsRouter.swift in Sources */,
 				9396C2282462BDE6000298C7 /* ApiRepositoryGateway.swift in Sources */,
 				9396C21C2462B37E000298C7 /* Result.swift in Sources */,
+				932AA2DA24700DC50069B150 /* Constants.swift in Sources */,
 				9396C2362462D24E000298C7 /* RepositoriesTableViewController.swift in Sources */,
 				9396C23A2462D50C000298C7 /* RepositoriesPresenter.swift in Sources */,
 				938DF8B9246BF4CC005ADD39 /* OwnerDetailsConfigurator.swift in Sources */,
