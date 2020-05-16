@@ -201,15 +201,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		932AA2F624701D5D0069B150 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				9300009E246C0D4600C44AE2 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		93646C972462AD7F000752C0 = {
 			isa = PBXGroup;
 			children = (
+				932AA2F624701D5D0069B150 /* Localization */,
 				93646CA22462AD7F000752C0 /* GitHubApp */,
 				93646CB92462AD85000752C0 /* GitHubAppTests */,
 				93646CA12462AD7F000752C0 /* Products */,
 				D8558CC48D0FF71104E80EEA /* Pods */,
 				8D9CF0E5517B2663A33BC67C /* Frameworks */,
-				9300009E246C0D4600C44AE2 /* Localizable.strings */,
 			);
 			sourceTree = "<group>";
 		};
