@@ -11,6 +11,11 @@
 		27A687444DFD1308279DBDD8 /* Pods_GitHubAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3811CB1CA3134F7C64C4236 /* Pods_GitHubAppTests.framework */; };
 		9300009C246C0D4600C44AE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9300009E246C0D4600C44AE2 /* Localizable.strings */; };
 		930000A5246C0E8500C44AE2 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000A4246C0E8500C44AE2 /* String+Localize.swift */; };
+		930000A8246C268C00C44AE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000A7246C268C00C44AE2 /* LoginViewController.swift */; };
+		930000AA246C269D00C44AE2 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000A9246C269D00C44AE2 /* LoginConfigurator.swift */; };
+		930000AC246C26A900C44AE2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000AB246C26A900C44AE2 /* LoginPresenter.swift */; };
+		930000AE246C26B600C44AE2 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000AD246C26B600C44AE2 /* LoginRouter.swift */; };
+		930000B0246C2D6C00C44AE2 /* APILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000AF246C2D6C00C44AE2 /* APILogin.swift */; };
 		93646CA42462AD7F000752C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93646CA32462AD7F000752C0 /* AppDelegate.swift */; };
 		93646CAB2462AD7F000752C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93646CA92462AD7F000752C0 /* Main.storyboard */; };
 		93646CAD2462AD84000752C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93646CAC2462AD84000752C0 /* Assets.xcassets */; };
@@ -65,6 +70,11 @@
 		9300009D246C0D4600C44AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		930000A1246C0D5B00C44AE2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		930000A4246C0E8500C44AE2 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
+		930000A7246C268C00C44AE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = GitHubApp/Other/Extensions/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		930000A9246C269D00C44AE2 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginConfigurator.swift; path = GitHubApp/Other/Extensions/LoginConfigurator.swift; sourceTree = SOURCE_ROOT; };
+		930000AB246C26A900C44AE2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = GitHubApp/Other/Extensions/LoginPresenter.swift; sourceTree = SOURCE_ROOT; };
+		930000AD246C26B600C44AE2 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRouter.swift; path = GitHubApp/Other/Extensions/LoginRouter.swift; sourceTree = SOURCE_ROOT; };
+		930000AF246C2D6C00C44AE2 /* APILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogin.swift; sourceTree = "<group>"; };
 		93646CA02462AD7F000752C0 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93646CA32462AD7F000752C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93646CAA2462AD7F000752C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +144,17 @@
 				A3811CB1CA3134F7C64C4236 /* Pods_GitHubAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		930000A6246C266B00C44AE2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				930000A9246C269D00C44AE2 /* LoginConfigurator.swift */,
+				930000AB246C26A900C44AE2 /* LoginPresenter.swift */,
+				930000A7246C268C00C44AE2 /* LoginViewController.swift */,
+				930000AD246C26B600C44AE2 /* LoginRouter.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		93646C972462AD7F000752C0 = {
@@ -254,6 +275,7 @@
 			children = (
 				9396C2222462B928000298C7 /* APIRepository.swift */,
 				9396C2242462BA51000298C7 /* APIOwner.swift */,
+				930000AF246C2D6C00C44AE2 /* APILogin.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -289,6 +311,7 @@
 		9396C2332462CF7F000298C7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				930000A6246C266B00C44AE2 /* Login */,
 				938DF8B5246BF243005ADD39 /* OwnerDetails */,
 				93BCE6B5246AC42F00E2DD76 /* RepositoryDetails */,
 				9396C2342462D22D000298C7 /* Repositories */,
@@ -520,6 +543,7 @@
 				938DF8B9246BF4CC005ADD39 /* OwnerDetailsConfigurator.swift in Sources */,
 				938DF8B2246BE781005ADD39 /* Date.swift in Sources */,
 				9396C21A2462B336000298C7 /* RepositoryGateway.swift in Sources */,
+				930000A8246C268C00C44AE2 /* LoginViewController.swift in Sources */,
 				93BCE6B9246AC45D00E2DD76 /* RepositoryDetailsPresenter.swift in Sources */,
 				9396C2322462C46D000298C7 /* DisplayRepositoriesList.swift in Sources */,
 				9396C2302462C391000298C7 /* RepositoriesApiRequest.swift in Sources */,
@@ -531,13 +555,17 @@
 				93867F00246B167500D75AF2 /* UIViewController+Alert.swift in Sources */,
 				938DF8BF246C00C4005ADD39 /* UIImage.swift in Sources */,
 				93BCE6BB246AC47000E2DD76 /* RepositoryDetailsViewController.swift in Sources */,
+				930000B0246C2D6C00C44AE2 /* APILogin.swift in Sources */,
+				930000AA246C269D00C44AE2 /* LoginConfigurator.swift in Sources */,
 				93646CCA2462B16B000752C0 /* Owner.swift in Sources */,
+				930000AC246C26A900C44AE2 /* LoginPresenter.swift in Sources */,
 				9396C23F2462D69D000298C7 /* ViewRouter.swift in Sources */,
 				93646CA42462AD7F000752C0 /* AppDelegate.swift in Sources */,
 				93BCE6B7246AC44A00E2DD76 /* RepositoryDetailsConfigurator.swift in Sources */,
 				93867EFE246B071000D75AF2 /* UIAlertController.swift in Sources */,
 				93646CC82462B043000752C0 /* Repository.swift in Sources */,
 				930000A5246C0E8500C44AE2 /* String+Localize.swift in Sources */,
+				930000AE246C26B600C44AE2 /* LoginRouter.swift in Sources */,
 				9396C2252462BA51000298C7 /* APIOwner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

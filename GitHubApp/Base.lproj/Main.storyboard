@@ -7,6 +7,70 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="b8U-cv-AFt">
+            <objects>
+                <navigationController id="gDg-zl-oZi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9md-gy-YGI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="g4S-LX-H0p" kind="relationship" relationship="rootViewController" id="2QY-cU-MAZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bwa-XR-cYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="-1546"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Owp-Wo-3v1">
+            <objects>
+                <viewController id="g4S-LX-H0p" customClass="LoginViewController" customModule="GitHubApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c8q-tE-dGu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="9Qu-9U-Jz4">
+                                <rect key="frame" x="15" y="66" width="384" height="174"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vnj-I0-Tfj">
+                                        <rect key="frame" x="10" y="0.0" width="364" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J7E-XM-4gg">
+                                        <rect key="frame" x="10" y="72" width="364" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-H5-sCT">
+                                        <rect key="frame" x="173" y="144" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="J7E-XM-4gg" secondAttribute="trailing" constant="10" id="LKV-j3-xh1"/>
+                                    <constraint firstItem="vnj-I0-Tfj" firstAttribute="leading" secondItem="9Qu-9U-Jz4" secondAttribute="leading" constant="10" id="N3i-wf-o4P"/>
+                                    <constraint firstItem="J7E-XM-4gg" firstAttribute="leading" secondItem="9Qu-9U-Jz4" secondAttribute="leading" constant="10" id="QeF-Iw-PMp"/>
+                                    <constraint firstAttribute="trailing" secondItem="vnj-I0-Tfj" secondAttribute="trailing" constant="10" id="tgy-RO-akq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sHD-fS-my3" firstAttribute="trailing" secondItem="9Qu-9U-Jz4" secondAttribute="trailing" constant="15" id="G9D-Ca-DRN"/>
+                            <constraint firstItem="9Qu-9U-Jz4" firstAttribute="leading" secondItem="sHD-fS-my3" secondAttribute="leading" constant="15" id="mBI-Nr-5Ow"/>
+                            <constraint firstItem="9Qu-9U-Jz4" firstAttribute="top" secondItem="sHD-fS-my3" secondAttribute="top" constant="10" id="zu5-GW-sZJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sHD-fS-my3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="07n-xv-vyH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bu-Bm-3G4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="-1545"/>
+        </scene>
         <!--Repositories Table View Controller-->
         <scene sceneID="bbN-aa-WAn">
             <objects>
@@ -102,15 +166,25 @@
                             <outlet property="delegate" destination="HA3-Pt-2gB" id="Bqu-Y9-GJf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FYY-RJ-Ykr"/>
+                    <navigationItem key="navigationItem" id="FYY-RJ-Ykr">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Logout" id="bfE-Im-7c0"/>
+                            <barButtonItem title="Login" id="WtQ-WI-E5v">
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="HA3-Pt-2gB" id="5oi-cA-hNk"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <segue destination="TQh-sx-lub" kind="show" identifier="RepositoriesSceeneToRepositoryDetailsSceneSegue" id="zkj-PJ-y9o"/>
                         <segue destination="0Qw-Xa-uft" kind="show" identifier="RepositoriesSceeneToOwnerDetailsSceneSegue" id="f4r-cN-4il"/>
+                        <segue destination="gDg-zl-oZi" kind="presentation" identifier="RepositoriesSceeneToLoginSceneSegue" id="pGO-r9-siZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERB-0N-JdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-485.50724637681162" y="-60.267857142857139"/>
+            <point key="canvasLocation" x="-333" y="-60"/>
         </scene>
         <!--Repository Details View Controller-->
         <scene sceneID="MSg-xr-hTQ">

@@ -27,6 +27,8 @@ protocol RepositoriesPresenter {
     func getRepositories(query: String?, sort: String?, sortOrder: String?)
     func sortRepositories(sort: String)
     var repositorySortKeys: Array<String> { get }
+    func loginButtonPressed()
+
 }
 
 class RepositoriesPresenterImplementation: RepositoriesPresenter {
@@ -106,6 +108,10 @@ class RepositoriesPresenterImplementation: RepositoriesPresenter {
     
     var repositorySortKeys: Array<String> {
         return ["Stars", "Forks", "Updated"]
+    }
+    
+    func loginButtonPressed() {
+        router.presentLogin()
     }
     
     // MARK: - Private

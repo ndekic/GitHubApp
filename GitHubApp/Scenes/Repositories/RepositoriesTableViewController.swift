@@ -73,6 +73,13 @@ class RepositoriesTableViewController: UITableViewController, UISearchBarDelegat
         searchController.searchBar.selectedScopeButtonIndex = 0
     }
     
+    // MARK: - IBOutlets actions
+    
+    @IBAction func loginButtonAction(_ sender: Any) {
+        presenter.loginButtonPressed()
+    }
+    
+    
 }
 
 // MARK: - RepositoriesView
