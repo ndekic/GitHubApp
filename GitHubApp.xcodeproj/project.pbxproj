@@ -201,18 +201,9 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		932AA2F624701D5D0069B150 /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				9300009E246C0D4600C44AE2 /* Localizable.strings */,
-			);
-			path = Localization;
-			sourceTree = "<group>";
-		};
 		93646C972462AD7F000752C0 = {
 			isa = PBXGroup;
 			children = (
-				932AA2F624701D5D0069B150 /* Localization */,
 				93646CA22462AD7F000752C0 /* GitHubApp */,
 				93646CB92462AD85000752C0 /* GitHubAppTests */,
 				93646CA12462AD7F000752C0 /* Products */,
@@ -242,6 +233,7 @@
 				93646CAC2462AD84000752C0 /* Assets.xcassets */,
 				93646CAE2462AD84000752C0 /* LaunchScreen.storyboard */,
 				93646CB12462AD84000752C0 /* Info.plist */,
+				9300009E246C0D4600C44AE2 /* Localizable.strings */,
 			);
 			path = GitHubApp;
 			sourceTree = "<group>";
