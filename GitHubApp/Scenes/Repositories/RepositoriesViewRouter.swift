@@ -21,15 +21,14 @@ class RepositoriesViewRouterImplementation: RepositoriesViewRouter {
     }
     
     // MARK: - RepositoriesViewRouter
-    
     func presentDetailsView(for repository: Repository) {
         self.repository = repository
-        repositorysTableViewController?.performSegue(withIdentifier: "RepositoriesSceeneToRepositoryDetailsSceneSegue", sender: nil)
+        repositorysTableViewController?.performSegue(withIdentifier: SegueIdentifiers.repositoryDetailsSegue, sender: nil)
     }
     
     func presentOwnerDetailsView(for repository: Repository) {
         self.repository = repository
-        repositorysTableViewController?.performSegue(withIdentifier: "RepositoriesSceeneToOwnerDetailsSceneSegue", sender: nil)
+        repositorysTableViewController?.performSegue(withIdentifier: SegueIdentifiers.ownerDetailsSegue, sender: nil)
     }
     
     

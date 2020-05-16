@@ -11,3 +11,13 @@ struct Constants{
     static let baseURL: String = "https://api.github.com/search/repositories"
     static let defaultCellHeight: CGFloat = 120
 }
+
+
+struct SegueIdentifiers{
+    static let repositoryDetailsSegue: String = "RepositoriesSceeneToRepositoryDetailsSceneSegue"
+    static let ownerDetailsSegue: String = "RepositoriesSceeneToOwnerDetailsSceneSegue"
+}
+
+struct CellIdentifiers {
+    static let repositoryCellIdentifier: String = "RepositoryTableViewCell"
+}

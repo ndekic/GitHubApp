@@ -51,6 +51,6 @@ extension OwnerDetailsViewController: OwnerDetailsView {
     }
     
     func displayURLError() {
-        presentAlert(withTitle: "Unable to open URL", message: nil)
+        presentAlert(withTitle: "url_error".localized(), message: nil)
     }
 }

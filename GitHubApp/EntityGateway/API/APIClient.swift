@@ -33,7 +33,6 @@ class ApiClientImplementation: ApiClient {
     }
     
     // MARK: - ApiClient
-    
     func execute<T>(request: ApiRequest, completionHandler: @escaping (Result<ApiResponse<T>>) -> Void) {
         let dataTask = urlSession.dataTask(with: request.urlRequest) { (data, response, error) in
             guard let httpUrlResponse = response as? HTTPURLResponse else {

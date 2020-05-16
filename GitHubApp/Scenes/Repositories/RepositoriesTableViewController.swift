@@ -35,14 +35,14 @@ class RepositoriesTableViewController: UITableViewController {
     }
     
     // MARK: - UITableViewDataSource
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.numberOfRepositories
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryTableViewCell", for: indexPath) as! RepositoryTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers
+            .repositoryCellIdentifier, for: indexPath) as! RepositoryTableViewCell
         presenter.configure(cell: cell, forRow: indexPath.row)
         
         return cell

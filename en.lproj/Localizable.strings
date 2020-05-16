@@ -19,3 +19,4 @@
 "cancel_label" = "Cancel";
 "ok_label" = "OK";
 "general_error_message" = "Error occured";
+"url_error" = "Unable to open URL";

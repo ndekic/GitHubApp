@@ -21,7 +21,6 @@ class DisplayRepositoriesListUseCaseImplementation: DisplayRepositoriesUseCase {
     }
     
     // MARK: - DisplayRepositoriesUseCase
-    
     func displayRepositories(query: String, sort: String, sortOrder: String, completionHandler: @escaping (Result<[Repository]>) -> Void) {
         self.repositoryGateway.fetchRepositories(query: query, sort: sort, sortOrder: sortOrder) { (result) in
             completionHandler(result)

@@ -51,7 +51,6 @@ class RepositoriesPresenterImplementation: RepositoriesPresenter {
     }
     
     // MARK: - RepositoriesPresenter
-    
     func viewDidLoad() {
         getRepositories(query: nil, sort: nil, sortOrder: nil)
         view?.display(searchBarPlaceholder: "search_repositories_placeholder".localized())
@@ -109,7 +108,6 @@ class RepositoriesPresenterImplementation: RepositoriesPresenter {
     }
     
     // MARK: - Private
-    
     fileprivate func handleRepositoriesReceived(_ repositories: [Repository]) {
         self.repositories = repositories
         view?.refreshRepositoriesView()
@@ -123,7 +121,6 @@ class RepositoriesPresenterImplementation: RepositoriesPresenter {
     }
     
     // MARK: - Selectors
-    
     @objc func buttonClicked(sender:UIButton) {
         didSelectOwnerDetails(row: sender.tag)
     }

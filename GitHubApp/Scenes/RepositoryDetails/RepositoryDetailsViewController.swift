@@ -31,7 +31,6 @@ class RepositoryDetailsViewController: UIViewController {
     }
     
     // MARK: - IBOutlets actions
-    
     @IBAction func ownerNameButtonAction(_ sender: Any) {
         presenter.presentOwnerUrl(repositoryDetailViewController: self)
     }
@@ -42,14 +41,13 @@ class RepositoryDetailsViewController: UIViewController {
 }
 
 // MARK: - RepositoryDetailsView
-
 extension RepositoryDetailsViewController: RepositoryDetailsView {
     func display(screenTitle: String) {
         self.title = screenTitle
     }
     
     func displayURLError() {
-        presentAlert(withTitle: "Unable to open URL", message: nil)
+        presentAlert(withTitle: "url_error".localized(), message: nil)
     }
     
     func display(repositoryName: String) {
