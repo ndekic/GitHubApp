@@ -1,2 +1,2 @@
 # GitHubApp
-MVP with Clean Architecture concepts
+MVP with Clean Architecture concepts. Includes localization and unit testing.
