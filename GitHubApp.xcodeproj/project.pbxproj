@@ -12,11 +12,16 @@
 		9300009C246C0D4600C44AE2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9300009E246C0D4600C44AE2 /* Localizable.strings */; };
 		930000A5246C0E8500C44AE2 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930000A4246C0E8500C44AE2 /* String+Localize.swift */; };
 		932AA2DA24700DC50069B150 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2D924700DC50069B150 /* Constants.swift */; };
+		932AA2E02470161E0069B150 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2DF2470161E0069B150 /* Repository.swift */; };
+		932AA2E2247017450069B150 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2E1247017450069B150 /* NSError.swift */; };
+		932AA2EB247018820069B150 /* RepositoriesViewRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2EA247018820069B150 /* RepositoriesViewRouterSpy.swift */; };
+		932AA2EE247018F90069B150 /* DisplayRepositoriesUseCaseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2ED247018F90069B150 /* DisplayRepositoriesUseCaseStub.swift */; };
+		932AA2F1247019610069B150 /* RepositoriesPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2F0247019610069B150 /* RepositoriesPresenterTest.swift */; };
+		932AA2F4247019A70069B150 /* RepositoriesViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2F3247019A70069B150 /* RepositoriesViewSpy.swift */; };
 		93646CA42462AD7F000752C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93646CA32462AD7F000752C0 /* AppDelegate.swift */; };
 		93646CAB2462AD7F000752C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93646CA92462AD7F000752C0 /* Main.storyboard */; };
 		93646CAD2462AD84000752C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93646CAC2462AD84000752C0 /* Assets.xcassets */; };
 		93646CB02462AD84000752C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93646CAE2462AD84000752C0 /* LaunchScreen.storyboard */; };
-		93646CBB2462AD85000752C0 /* GitHubAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93646CBA2462AD85000752C0 /* GitHubAppTests.swift */; };
 		93646CC82462B043000752C0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93646CC72462B043000752C0 /* Repository.swift */; };
 		93646CCA2462B16B000752C0 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93646CC92462B16B000752C0 /* Owner.swift */; };
 		93867EFE246B071000D75AF2 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93867EFD246B071000D75AF2 /* UIAlertController.swift */; };
@@ -67,6 +72,13 @@
 		930000A1246C0D5B00C44AE2 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		930000A4246C0E8500C44AE2 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
 		932AA2D924700DC50069B150 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		932AA2DF2470161E0069B150 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		932AA2E1247017450069B150 /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		932AA2EA247018820069B150 /* RepositoriesViewRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewRouterSpy.swift; sourceTree = "<group>"; };
+		932AA2ED247018F90069B150 /* DisplayRepositoriesUseCaseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRepositoriesUseCaseStub.swift; sourceTree = "<group>"; };
+		932AA2F0247019610069B150 /* RepositoriesPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenterTest.swift; sourceTree = "<group>"; };
+		932AA2F3247019A70069B150 /* RepositoriesViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewSpy.swift; sourceTree = "<group>"; };
+		932AA2F524701CE10069B150 /* GitHubAppTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GitHubAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		93646CA02462AD7F000752C0 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93646CA32462AD7F000752C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93646CAA2462AD7F000752C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +86,6 @@
 		93646CAF2462AD84000752C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93646CB12462AD84000752C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93646CB62462AD85000752C0 /* GitHubAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93646CBA2462AD85000752C0 /* GitHubAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAppTests.swift; sourceTree = "<group>"; };
 		93646CBC2462AD85000752C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93646CC72462B043000752C0 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		93646CC92462B16B000752C0 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
@@ -138,6 +149,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		932AA2DB247015CF0069B150 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				932AA2F22470198F0069B150 /* Views */,
+				932AA2EC247018D40069B150 /* UseCases */,
+				932AA2E9247018710069B150 /* Routers */,
+				932AA2DD247016010069B150 /* Creators */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		932AA2DD247016010069B150 /* Creators */ = {
+			isa = PBXGroup;
+			children = (
+				932AA2DF2470161E0069B150 /* Repository.swift */,
+				932AA2E1247017450069B150 /* NSError.swift */,
+			);
+			path = Creators;
+			sourceTree = "<group>";
+		};
+		932AA2E9247018710069B150 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				932AA2EA247018820069B150 /* RepositoriesViewRouterSpy.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		932AA2EC247018D40069B150 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				932AA2ED247018F90069B150 /* DisplayRepositoriesUseCaseStub.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		932AA2EF2470194D0069B150 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				932AA2F0247019610069B150 /* RepositoriesPresenterTest.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		932AA2F22470198F0069B150 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				932AA2F3247019A70069B150 /* RepositoriesViewSpy.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		93646C972462AD7F000752C0 = {
 			isa = PBXGroup;
 			children = (
@@ -178,8 +241,10 @@
 		93646CB92462AD85000752C0 /* GitHubAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				93646CBA2462AD85000752C0 /* GitHubAppTests.swift */,
+				932AA2EF2470194D0069B150 /* Presenters */,
+				932AA2DB247015CF0069B150 /* Helpers */,
 				93646CBC2462AD85000752C0 /* Info.plist */,
+				932AA2F524701CE10069B150 /* GitHubAppTests-Bridging-Header.h */,
 			);
 			path = GitHubAppTests;
 			sourceTree = "<group>";
@@ -397,6 +462,7 @@
 					};
 					93646CB52462AD85000752C0 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 93646C9F2462AD7F000752C0;
 					};
 				};
@@ -550,7 +616,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93646CBB2462AD85000752C0 /* GitHubAppTests.swift in Sources */,
+				932AA2EB247018820069B150 /* RepositoriesViewRouterSpy.swift in Sources */,
+				932AA2F4247019A70069B150 /* RepositoriesViewSpy.swift in Sources */,
+				932AA2E02470161E0069B150 /* Repository.swift in Sources */,
+				932AA2EE247018F90069B150 /* DisplayRepositoriesUseCaseStub.swift in Sources */,
+				932AA2E2247017450069B150 /* NSError.swift in Sources */,
+				932AA2F1247019610069B150 /* RepositoriesPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +828,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85TN92QYPB;
 				INFOPLIST_FILE = GitHubAppTests/Info.plist;
@@ -768,6 +840,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikola.githubapp.GitHubAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitHubAppTests/Helpers/Creators/GitHubAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubApp.app/GitHubApp";
@@ -780,6 +854,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85TN92QYPB;
 				INFOPLIST_FILE = GitHubAppTests/Info.plist;
@@ -791,6 +866,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikola.githubapp.GitHubAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitHubAppTests/Helpers/Creators/GitHubAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubApp.app/GitHubApp";
