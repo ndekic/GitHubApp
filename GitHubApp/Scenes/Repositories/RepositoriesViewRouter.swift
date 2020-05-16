@@ -7,6 +7,10 @@
 
 import UIKit
 
+/**
+ * Layer: Router
+ * Description: contains navigation / flow logic from one scene (view controller) to another
+*/
 protocol RepositoriesViewRouter: ViewRouter {
     func presentDetailsView(for repository: Repository)
     func presentOwnerDetailsView(for repository: Repository)

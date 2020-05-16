@@ -7,6 +7,10 @@
 
 import Foundation
 
+/**
+ * Layer: Configurator
+ * Description: injects the dependency object graph into the scene (view controller)
+*/
 protocol RepositoriesConfigurator {
     func configure(repositorysTableViewController: RepositoriesTableViewController)
 }

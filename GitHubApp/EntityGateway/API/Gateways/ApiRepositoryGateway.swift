@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ApiRepositoryGateway: RepositoryGateway {
-    
+    // empty
 }
 
 class ApiReposiotryGatewayImplementation: ApiRepositoryGateway {

@@ -7,6 +7,10 @@
 
 import Foundation
 
+/**
+ * Layer: UseCase
+ * Description: contains the application / business logic for a specific use case in your application 
+*/
 typealias DisplayRepositoriesUseCaseCompletionHandler = (_ Repositories: Result<[Repository]>) -> Void
 
 protocol DisplayRepositoriesUseCase {

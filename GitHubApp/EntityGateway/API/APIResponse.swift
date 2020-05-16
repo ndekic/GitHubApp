@@ -11,7 +11,7 @@ struct NetworkRequestError: Error {
     let error: Error?
     
     var localizedDescription: String {
-        return error?.localizedDescription ?? "Network request error - no other information"
+        return error?.localizedDescription ?? "Network request error"
     }
 }
 
@@ -54,6 +54,6 @@ extension NSError {
     static func createPraseError() -> NSError {
         return NSError(domain: "com.nikola.githubapp",
                        code: ApiParseError.code,
-                       userInfo: [NSLocalizedDescriptionKey: "A parsing error occured"])
+                       userInfo: [NSLocalizedDescriptionKey: "Parsing error occured"])
     }
 }

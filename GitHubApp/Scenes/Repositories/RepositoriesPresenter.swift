@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+/**
+ * Layer: View
+ * Description: delegates user interaction events to the Presenter and displays data passed by the Presenter
+*/
 protocol RepositoriesView: class {
     func display(screenTitle: String)
     func refreshRepositoriesView()
@@ -17,6 +21,10 @@ protocol RepositoriesView: class {
     func display(searchBarPlaceholder: String)
 }
 
+/**
+ * Layer: Presenter
+ * Description: contains the presentation logic and tells the View what to present
+*/
 protocol RepositoriesPresenter {
     var numberOfRepositories: Int { get }
     var router: RepositoriesViewRouter { get }

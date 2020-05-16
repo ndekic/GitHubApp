@@ -7,6 +7,10 @@
 
 import Foundation
 
+/**
+ * Layer: Entity
+ * Description: plain Swift classes / structs 
+*/
 struct Repository: Codable {
     var id: Int64
     var created_at: Date
